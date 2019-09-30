@@ -1,0 +1,68 @@
+{
+  "name": "annonceOffre",
+  "plural": "annoncesOffre",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "replaceOnPUT": false,
+  "forceId": false,
+  "properties": {
+    "titre": {
+      "type": "string",
+      "required": true,
+      "format": "text"
+    },
+    "annonce": {
+      "type": "string",
+      "required": true,
+      "format": "text"
+    },
+    "tarif": {
+      "type": "number",
+      "required": true,
+      "default": 15
+    }
+  },
+  "validations": [],
+  "relations": {
+    "client": {
+      "type": "belongsTo",
+      "model": "client",
+      "foreignKey": "userId"
+    },
+    "matieres": {
+      "type": "hasMany",
+      "model": "matiere",
+      "foreignKey": "annonceOffreId"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "admin",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

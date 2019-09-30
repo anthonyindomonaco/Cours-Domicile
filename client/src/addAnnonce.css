@@ -1,0 +1,68 @@
+.root {
+  width: 100%;
+  background-color: #f2f212;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin-top: 20px;
+}
+
+.label {
+	margin-right: 10px !important;
+	display: inline !important;
+}
+
+.chipGreen{
+	border-color: black !important;
+	color: black !important;
+	background-color: #a1ffa1 !important;
+	margin-right: 2px;
+}
+
+.chipRed{
+	border-color: black !important;
+	color: black !important;
+	background-color: #ffa1a1 !important;
+	margin-right: 2px;
+}
+
+.chipBlue{
+	border-color: black !important;
+	color: black !important;
+	background-color: #a1a1ff !important;
+	margin-right: 2px;
+}
+
+.icon {
+	color : black !important;
+}
+
+.chipGreen:hover{
+		border-color: #888888 !important;
+		color: #113c11 !important;
+		background-color: #c1ffc1 !important;
+	}
+
+.chipRed:hover{
+		border-color: #888888 !important;
+		color: #3c1111 !important;
+		background-color: #ffc1c1 !important;
+	}
+
+.chipBlue:hover{
+		border-color: #888888 !important;
+		color: #11113c !important;
+		background-color: #c1c1ff !important;
+	}
+.button2 {
+   border-color: #222222 !important;
+   border: 2px solid !important;
+   color: #222222 !important;
+   background-color: #cccccc !important;
+  }
+
+.button2:hover {
+	color : #ffffff !important;
+	background-color: #222222 !important;
+	border-color: #cccccc !important;
+	border: 2px solid !important;
+		 }

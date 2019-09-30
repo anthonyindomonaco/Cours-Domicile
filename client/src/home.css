@@ -1,0 +1,23 @@
+.Card {
+  margin: 10px;
+  width: 350px;
+  height: 210px;
+  display: inline-block;
+  vertical-align: center;
+}
+
+.CardActionArea {
+  margin: 2px;
+  min-width: 350px;
+  height: 96px;
+  display: inline-block;
+  vertical-align: center;
+}
+
+.Avatar {
+  display: inline-block;
+}
+
+.Typography {
+  display : inline-block;
+}

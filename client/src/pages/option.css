@@ -1,0 +1,21 @@
+.CardOption {
+    width: 200px;
+    height: 200px;
+    vertical-align: bottom;
+    text-align: center;
+    background-color: #F9CA6E !important;
+    color: #5094CB;
+}
+
+.CardOption:hover{
+    background-color: #F8B042 !important;
+    color: #52C2CA;
+}
+
+.LogoOption {
+    width: 100px !important;
+    height: 100px !important;
+    vertical-align: middle !important;
+    text-align: center !important;
+    margin-bottom: 25px;
+}

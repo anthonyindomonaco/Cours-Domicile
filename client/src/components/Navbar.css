@@ -1,0 +1,24 @@
+.link {
+  border: 2px solid red;
+  border-radius: 26px;
+  animation: grow 3s alternate infinite;
+}
+
+.link:hover {
+  cursor: pointer;
+}
+
+@keyframes grow {
+  from {
+    transform : scale(1);
+  }
+
+  to {
+    transform : scale(1.2);
+  }
+}
+
+.avatar {
+    border-radius: 22px !important;
+    margin: 2px;
+  }

@@ -1,0 +1,70 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "RoleMapping": {
+    "dataSource": "mongo",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "User": {
+    "dataSource": "mongo"
+  },
+  "Role": {
+    "dataSource": "mongo",
+    "public": false
+  },
+  "client": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "AccessToken": {
+    "dataSource": "mongo",
+    "public": false,
+    "strict": true,
+    "relations": {
+      "user": {
+        "type": "belongsTo",
+        "model": "client",
+        "foreignKey": "userId"
+      }
+    }
+  },
+  "ACL": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "annonceDemande": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "annonceOffre": {
+    "dataSource": "mongo",
+    "public": true
+  },
+  "matiere": {
+    "dataSource": "mongo",
+    "public": false
+  },
+  "attachment": {
+    "dataSource": "storage",
+    "public": true
+  },
+  "image": {
+    "dataSource": "image",
+    "public": true
+  }
+}
